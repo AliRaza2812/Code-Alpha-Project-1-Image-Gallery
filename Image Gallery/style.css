@@ -1,0 +1,93 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(0.9) rotate(-10deg);
+  border-radius: 1.2rem;
+  box-shadow: 0 1rem 5rem rgba(42, 44, 54, 0.8);
+}
+
+.full-img {
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.full-img img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 50%;
+}
+
+/* Previous button */
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Next button */
+.next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Button hover effect */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

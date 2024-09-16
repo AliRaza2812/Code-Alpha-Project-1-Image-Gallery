@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery | CodeAlpha Task 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="full-img" id="fullimgbox">
+      <img src="Images/A1.jpg" id="fullimg" alt="Full Image" />
+      <img
+        onclick="closefullImg()"
+        src="Images/Cross.svg"
+        class="cross"
+        alt="Close"
+      />
+
+      <!-- Previous and Next buttons -->
+      <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+      <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <div class="gallery">
+      <img src="Images/A1.jpg" onclick="openfullImg(0)" alt="" />
+      <img src="Images/A2.jpg" onclick="openfullImg(1)" alt="" />
+      <img src="Images/A3.jpg" onclick="openfullImg(2)" alt="" />
+      <img src="Images/A4.jpg" onclick="openfullImg(3)" alt="" />
+      <img src="Images/A5.jpg" onclick="openfullImg(4)" alt="" />
+      <img src="Images/A6.jpg" onclick="openfullImg(5)" alt="" />
+      <img src="Images/A7.jpg" onclick="openfullImg(6)" alt="" />
+      <img src="Images/A8.jpg" onclick="openfullImg(7)" alt="" />
+      <img src="Images/A9.jpg" onclick="openfullImg(8)" alt="" />
+      <img src="Images/A10.jpg" onclick="openfullImg(9)" alt="" />
+      <img src="Images/A11.jpg" onclick="openfullImg(10)" alt="" />
+      <img src="Images/A12.jpg" onclick="openfullImg(11)" alt="" />
+      <img src="Images/A13.jpg" onclick="openfullImg(12)" alt="" />
+      <img src="Images/A14.jpg" onclick="openfullImg(13)" alt="" />
+      <img src="Images/A7.jpg" onclick="openfullImg(14)" alt="" />
+      <img src="Images/A4.jpg" onclick="openfullImg(15)" alt="" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
